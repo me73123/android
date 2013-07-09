@@ -29,7 +29,7 @@ public class pj_str_t {
     if (swigCPtr != 0) {
       if (swigCMemOwn) {
         swigCMemOwn = false;
-        pjsuaJNI.delete_pj_str_t(swigCPtr);
+        pjsuaJNI.delete_pj_str_t(swigCPtr);  //TODO delete
       }
       swigCPtr = 0;
     }
@@ -50,23 +50,23 @@ public class pj_str_t {
   }
 
   public void setPtr(String value) {
-    pjsuaJNI.pj_str_t_ptr_set(swigCPtr, this, value);
+    pjsuaJNI.pj_str_t_ptr_set(swigCPtr, this, value);  //TODO ptr_set
   }
 
   public String getPtr() {
-    return pjsuaJNI.pj_str_t_ptr_get(swigCPtr, this);
+    return pjsuaJNI.pj_str_t_ptr_get(swigCPtr, this);  //TODO ptr_get
   }
 
   public void setSlen(int value) {
-    pjsuaJNI.pj_str_t_slen_set(swigCPtr, this, value);
+    pjsuaJNI.pj_str_t_slen_set(swigCPtr, this, value);  //TODO slen_set
   }
 
   public int getSlen() {
-    return pjsuaJNI.pj_str_t_slen_get(swigCPtr, this);
+    return pjsuaJNI.pj_str_t_slen_get(swigCPtr, this);  //TODO slen_get
   }
 
   public pj_str_t() {
-    this(pjsuaJNI.new_pj_str_t(), true);
+    this(pjsuaJNI.new_pj_str_t(), true);  //TODO new
   }
 
 }

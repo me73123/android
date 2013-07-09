@@ -29,56 +29,56 @@ public class pjsua_msg_data {
     if (swigCPtr != 0) {
       if (swigCMemOwn) {
         swigCMemOwn = false;
-        pjsuaJNI.delete_pjsua_msg_data(swigCPtr);
+        pjsuaJNI.delete_pjsua_msg_data(swigCPtr);  //TODO delete
       }
       swigCPtr = 0;
     }
   }
 
   public void setHdr_list(SWIGTYPE_p_pjsip_hdr value) {
-    pjsuaJNI.pjsua_msg_data_hdr_list_set(swigCPtr, this, SWIGTYPE_p_pjsip_hdr.getCPtr(value));
+    pjsuaJNI.pjsua_msg_data_hdr_list_set(swigCPtr, this, SWIGTYPE_p_pjsip_hdr.getCPtr(value));  //TODO hdr_list_set
   }
 
   public SWIGTYPE_p_pjsip_hdr getHdr_list() {
-    return new SWIGTYPE_p_pjsip_hdr(pjsuaJNI.pjsua_msg_data_hdr_list_get(swigCPtr, this), true);
+    return new SWIGTYPE_p_pjsip_hdr(pjsuaJNI.pjsua_msg_data_hdr_list_get(swigCPtr, this), true);  //TODO hdr_list_get
   }
 
   public void setContent_type(pj_str_t value) {
-    pjsuaJNI.pjsua_msg_data_content_type_set(swigCPtr, this, pj_str_t.getCPtr(value), value);
+    pjsuaJNI.pjsua_msg_data_content_type_set(swigCPtr, this, pj_str_t.getCPtr(value), value);  //TODO content_type_set
   }
 
   public pj_str_t getContent_type() {
-    long cPtr = pjsuaJNI.pjsua_msg_data_content_type_get(swigCPtr, this);
+    long cPtr = pjsuaJNI.pjsua_msg_data_content_type_get(swigCPtr, this);  //TODO content_type_get
     return (cPtr == 0) ? null : new pj_str_t(cPtr, false);
   }
 
   public void setMsg_body(pj_str_t value) {
-    pjsuaJNI.pjsua_msg_data_msg_body_set(swigCPtr, this, pj_str_t.getCPtr(value), value);
+    pjsuaJNI.pjsua_msg_data_msg_body_set(swigCPtr, this, pj_str_t.getCPtr(value), value);  //TODO msg_body_set
   }
 
   public pj_str_t getMsg_body() {
-    long cPtr = pjsuaJNI.pjsua_msg_data_msg_body_get(swigCPtr, this);
+    long cPtr = pjsuaJNI.pjsua_msg_data_msg_body_get(swigCPtr, this);  //TODO msg_body_get
     return (cPtr == 0) ? null : new pj_str_t(cPtr, false);
   }
 
   public void setMultipart_ctype(SWIGTYPE_p_pjsip_media_type value) {
-    pjsuaJNI.pjsua_msg_data_multipart_ctype_set(swigCPtr, this, SWIGTYPE_p_pjsip_media_type.getCPtr(value));
+    pjsuaJNI.pjsua_msg_data_multipart_ctype_set(swigCPtr, this, SWIGTYPE_p_pjsip_media_type.getCPtr(value));  //TODO multipart_ctype_set
   }
 
   public SWIGTYPE_p_pjsip_media_type getMultipart_ctype() {
-    return new SWIGTYPE_p_pjsip_media_type(pjsuaJNI.pjsua_msg_data_multipart_ctype_get(swigCPtr, this), true);
+    return new SWIGTYPE_p_pjsip_media_type(pjsuaJNI.pjsua_msg_data_multipart_ctype_get(swigCPtr, this), true);  //TODO multipart_ctype_get
   }
 
   public void setMultipart_parts(SWIGTYPE_p_pjsip_multipart_part value) {
-    pjsuaJNI.pjsua_msg_data_multipart_parts_set(swigCPtr, this, SWIGTYPE_p_pjsip_multipart_part.getCPtr(value));
+    pjsuaJNI.pjsua_msg_data_multipart_parts_set(swigCPtr, this, SWIGTYPE_p_pjsip_multipart_part.getCPtr(value));  //TODO multipart_parts_set
   }
 
   public SWIGTYPE_p_pjsip_multipart_part getMultipart_parts() {
-    return new SWIGTYPE_p_pjsip_multipart_part(pjsuaJNI.pjsua_msg_data_multipart_parts_get(swigCPtr, this), true);
+    return new SWIGTYPE_p_pjsip_multipart_part(pjsuaJNI.pjsua_msg_data_multipart_parts_get(swigCPtr, this), true);  //TODO multipart_parts_get
   }
 
   public pjsua_msg_data() {
-    this(pjsuaJNI.new_pjsua_msg_data(), true);
+    this(pjsuaJNI.new_pjsua_msg_data(), true);  //TODO new
   }
 
 }

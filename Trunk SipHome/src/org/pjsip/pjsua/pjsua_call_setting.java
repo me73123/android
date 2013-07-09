@@ -29,46 +29,46 @@ public class pjsua_call_setting {
     if (swigCPtr != 0) {
       if (swigCMemOwn) {
         swigCMemOwn = false;
-        pjsuaJNI.delete_pjsua_call_setting(swigCPtr);
+        pjsuaJNI.delete_pjsua_call_setting(swigCPtr);  //TODO delete
       }
       swigCPtr = 0;
     }
   }
 
   public void setFlag(long value) {
-    pjsuaJNI.pjsua_call_setting_flag_set(swigCPtr, this, value);
+    pjsuaJNI.pjsua_call_setting_flag_set(swigCPtr, this, value);  //TODO flag_set
   }
 
   public long getFlag() {
-    return pjsuaJNI.pjsua_call_setting_flag_get(swigCPtr, this);
+    return pjsuaJNI.pjsua_call_setting_flag_get(swigCPtr, this);  //TODO flag_get
   }
 
   public void setReq_keyframe_method(long value) {
-    pjsuaJNI.pjsua_call_setting_req_keyframe_method_set(swigCPtr, this, value);
+    pjsuaJNI.pjsua_call_setting_req_keyframe_method_set(swigCPtr, this, value);  //TODO req_keyframe_method_set
   }
 
   public long getReq_keyframe_method() {
-    return pjsuaJNI.pjsua_call_setting_req_keyframe_method_get(swigCPtr, this);
+    return pjsuaJNI.pjsua_call_setting_req_keyframe_method_get(swigCPtr, this);  //TODO req_keyframe_method_get
   }
 
   public void setAud_cnt(long value) {
-    pjsuaJNI.pjsua_call_setting_aud_cnt_set(swigCPtr, this, value);
+    pjsuaJNI.pjsua_call_setting_aud_cnt_set(swigCPtr, this, value);  //TODO setting_aud_cnt_set
   }
 
   public long getAud_cnt() {
-    return pjsuaJNI.pjsua_call_setting_aud_cnt_get(swigCPtr, this);
+    return pjsuaJNI.pjsua_call_setting_aud_cnt_get(swigCPtr, this);  //TODO setting_aud_cnt_get
   }
 
   public void setVid_cnt(long value) {
-    pjsuaJNI.pjsua_call_setting_vid_cnt_set(swigCPtr, this, value);
+    pjsuaJNI.pjsua_call_setting_vid_cnt_set(swigCPtr, this, value);  //TODO vid_cnt_set
   }
 
   public long getVid_cnt() {
-    return pjsuaJNI.pjsua_call_setting_vid_cnt_get(swigCPtr, this);
+    return pjsuaJNI.pjsua_call_setting_vid_cnt_get(swigCPtr, this);  //TODO vid_cnt_get
   }
 
   public pjsua_call_setting() {
-    this(pjsuaJNI.new_pjsua_call_setting(), true);
+    this(pjsuaJNI.new_pjsua_call_setting(), true);  //TODO new
   }
 
 }
